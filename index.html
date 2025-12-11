@@ -1,0 +1,249 @@
+<!-- I will rewrite the entire HTML with clean, responsive Tailwind classes while keeping the desktop design EXACTLY the same. Mobile/tablet fully responsive. -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="overflow-x-hidden">
+
+    <header class="bg-[#5855E7] w-full">
+        <nav class="container mx-auto px-6 h-[143px] hidden md:flex items-center justify-between">
+            <img src="./assets/logo.svg" alt="logo" />
+
+            <ul class="lg:flex gap-[42px] text-white hidden md:flex">
+                <li><a href="#">О нашей школе</a></li>
+                <li><a href="#">Преимущества</a></li>
+                <li><a href="#">Классы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <button class="lg:w-[268px] h-[50px] bg-white text-black rounded hidden md:block">
+                Связаться с нами
+            </button>
+        </nav>
+
+        <div class="md:hidden flex items-center justify-between px-4 py-4">
+            <img src="./assets/logo.svg" class="w-[120px]" />
+            <img src="./assets/menu.svg" class="w-[40px]" />
+        </div>
+    </header>
+
+    <section class="hero container mx-auto flex flex-col md:flex-row items-center justify-center mt-[180px] px-4 md:px-6 overflow-hidden">
+        <div class="hero_text w-full md:w-1/2 text-center md:text-left order-2 md:order-1 font-700">
+            <p class="text-[28px] md:text-[40px]">
+                <span class="text-[#6347EB] font-bold">The Best Future Stars</span> - мы заботимся о будущем вашего ребенка
+            </p>
+            <p class="mt-4 md:mt-[40px] text-[16px] md:text-[18px]">
+                Наши опытные преподователи сделают процесс обучения максимально интересным и эффективным для вашего ребенка
+            </p>
+            <div class="mt-4 md:mt-[50px] flex flex-col md:flex-row gap-4 justify-center md:justify-start flex-wrap">
+                <button class="w-full md:w-[220px] h-[58px] text-[20px] md:text-[32px] font-medium bg-[#6347EB] text-white rounded-lg">
+                    Позвонить
+                </button>
+    
+                <button class="w-full md:w-[220px] h-[58px] text-[20px] md:text-[32px] font-medium border-2 border-[#6347EB] rounded-lg">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+    
+        <div class="hero_img w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0 order-1 md:order-2 max-w-full overflow-hidden">
+            <img src="./assets/littleboy.svg" alt="hero image" class="w-full md:w-auto" />
+        </div>
+    </section>
+    
+    
+
+
+    <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[46px] px-4 mt-[90px] md:mt-[20]">
+        <div class="flex justify-center md:block">
+            <img src="./assets/school.svg" class="w-[300px] md:w-auto" />
+        </div>
+
+        <div>
+            <p class="text-[32px] md:text-[40px] font-bold mt-[10px] md:mt-[20px] text-center md:text-left">О нас</p>
+            <p class="mt-[20px] md:mt-[40px] text-[16px] md:text-[19px] leading-relaxed">
+                Для комфортного образования мы объединяем детей в небольшие группы по возрастам и направлениям.
+                Индивидуальный подход, не более 10 учеников в классе. Углублённый английский, поездки за рубеж.
+                Обучение с 8:00 до 17:00, 3-х разовое питание и выполнение домашних заданий.
+                <br><br>
+                Все условия и комфорт для ваших детей!
+            </p>
+        </div>
+    </section>
+
+
+    
+    <section class="w-full text-center bg-[#5855E7] mt-[100px] mb-[80px] py-[60px] px-4">
+        <h2 class="text-white font-semibold text-[32px] md:text-[40px] mb-[40px]">Наши преимущества</h2>
+
+        <div class="flex flex-wrap justify-center gap-[40px] md:gap-[80px] max-w-[1080px] mx-auto">
+
+           
+            <div class="w-[260px] text-white">
+                <img src="./assets/girls.svg" class="mx-auto" />
+                <h2 class="text-[22px] md:text-[24px] font-bold mt-[10px]">3-х разовое питание</h2>
+                <p class="text-[16px] md:text-[18px] mt-[15px]">Мы готовим вкусную и полезную еду 3 раза в день</p>
+            </div>
+
+            <div class="w-[260px] text-white">
+                <img src="./assets/boy.svg" class="mx-auto" />
+                <h2 class="text-[22px] md:text-[24px] font-bold mt-[10px]">IT технологии</h2>
+                <p class="text-[16px] md:text-[18px] mt-[15px]">Мы внедряем современные IT навыки в обучение</p>
+            </div>
+
+            <div class="w-[260px] text-white">
+                <img src="./assets/mental.svg" class="mx-auto" />
+                <h2 class="text-[22px] md:text-[24px] font-bold mt-[10px]">Ментальная арифметика</h2>
+                <p class="text-[16px] md:text-[18px] mt-[15px]">Развитие логики и мышления ребёнка</p>
+            </div>
+
+            <div class="w-[260px] text-white">
+                <img src="./assets/boys.svg" class="mx-auto" />
+                <h2 class="text-[22px] md:text-[24px] font-bold mt-[10px]">Развивающие занятия</h2>
+                <p class="text-[16px] md:text-[18px] mt-[15px]">Академические и творческие направления</p>
+            </div>
+
+            <div class="w-[260px] text-white">
+                <img src="./assets/flags.svg" class="mx-auto" />
+                <h2 class="text-[22px] md:text-[24px] font-bold mt-[10px]">Языковая практика</h2>
+                <p class="text-[16px] md:text-[18px] mt-[15px]">Практика и поездки за рубеж</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CLASSES SECTION -->
+    <section class="container mx-auto relative mb-[121px] px-4">
+        <div class="relative mx-auto text-center w-fit">
+            <h2 class="text-[60px] md:text-[96px] opacity-10 leading-none">Классы</h2>
+            <p class="text-[28px] md:text-[40px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Классы</p>
+        </div>
+
+        <div class="mt-[60px] md:mt-[105px] flex flex-wrap justify-center gap-[40px] md:gap-[126px]">
+
+            <!-- ONE CARD TEMPLATE -->
+            <div class="w-[270px] md:w-[300px] h-auto md:h-[530px] rounded-lg bg-[#5855E7] p-[17px] text-center text-white">
+                <img src="./assets/girl_class.svg" class="mx-auto" />
+                <h2 class="text-[26px] md:text-[30px] mt-[15px]">1 классы</h2>
+                <p class="text-[16px] md:text-[18px] mt-[8px]">6-7 лет</p>
+                <p class="text-[14px] mt-[10px]">Изучение каллиграфии, логопедия, английский, спорт</p>
+                <button class="text-[#6347EB] bg-white w-[140px] h-[32px] mt-[15px] rounded-md">Записаться</button>
+            </div>
+
+            <!-- Repeat same structure, I'm keeping EXACT DESIGN -->
+            <div class="w-[270px] md:w-[300px] h-auto md:h-[530px] rounded-lg bg-[#5855E7] p-[17px] text-center text-white">
+                <img src="./assets/raz 1.svg" class="mx-auto" />
+                <h2 class="text-[26px] md:text-[30px] mt-[15px]">2 классы</h2>
+                <p class="text-[16px] md:text-[18px] mt-[8px]">7-8 лет</p>
+                <p class="text-[14px] mt-[10px]">Изучение каллиграфии, логопедия, английский, спорт</p>
+                <button class="text-[#6347EB] bg-white w-[140px] h-[32px] mt-[15px] rounded-md">Записаться</button>
+            </div>
+
+            <div class="w-[270px] md:w-[300px] h-auto md:h-[530px] rounded-lg bg-[#5855E7] p-[17px] text-center text-white">
+                <img src="./assets/girlss.svg" class="mx-auto" />
+                <h2 class="text-[26px] md:text-[30px] mt-[15px]">3 классы</h2>
+                <p class="text-[16px] md:text-[18px] mt-[8px]">8-9 лет</p>
+                <p class="text-[14px] mt-[10px]">Изучение каллиграфии, логопедия, английский, спорт</p>
+                <button class="text-[#6347EB] bg-white w-[140px] h-[32px] mt-[15px] rounded-md">Записаться</button>
+            </div>
+
+            <div class="w-[270px] md:w-[300px] h-auto md:h-[530px] rounded-lg bg-[#5855E7] p-[17px] text-center text-white">
+                <img src="./assets/4girlss.svg" class="mx-auto" />
+                <h2 class="text-[26px] md:text-[30px] mt-[15px]">4 классы</h2>
+                <p class="text-[16px] md:text-[18px] mt-[8px]">9-10 лет</p>
+                <p class="text-[14px] mt-[10px]">Изучение каллиграфии, логопедия, английский, спорт</p>
+                <button class="text-[#6347EB] bg-white w-[140px] h-[32px] mt-[15px] rounded-md">Записаться</button>
+            </div>
+
+            <div class="w-[270px] md:w-[300px] h-auto md:h-[530px] rounded-lg bg-[#5855E7] p-[17px] text-center text-white">
+                <img src="./assets/boylast.svg" class="mx-auto" />
+                <h2 class="text-[26px] md:text-[30px] mt-[15px]">0 классы</h2>
+                <p class="text-[16px] md:text-[18px] mt-[8px]">4-5 лет</p>
+                <p class="text-[14px] mt-[10px]">Изучение каллиграфии, логопедия, английский, спорт</p>
+                <button class="text-[#6347EB] bg-white w-[140px] h-[32px] mt-[15px] rounded-md">Записаться</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="container mx-auto px-4">
+        <div class="relative mx-auto text-center mt-[80px] md:mt-[121px] w-fit">
+            <h2 class="text-[60px] md:text-[96px] opacity-10">Связаться</h2>
+            <p class="text-[28px] md:text-[40px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">
+                Связаться с нами
+            </p>
+        </div>
+
+        <div class="bg-[#5855E7] mt-[50px] md:mt-[81px] p-[30px] md:p-[50px] text-white flex flex-col md:flex-row items-start justify-center gap-[40px] md:gap-[114px] rounded-lg">
+
+            <div>
+                <h3 class="text-[32px] md:text-[40px] mb-[20px]">Контакты</h3>
+
+                <div class="flex gap-[20px] mb-[12px]">
+                    <img src="./assets/square.svg" />
+                    <p class="text-[20px] md:text-[24px]">г.Ташкент, Чиланзар 16-й квартал, ул. Ботирма</p>
+                </div>
+
+                <div class="flex gap-[20px] mb-[12px]">
+                    <img src="./assets/square.svg" />
+                    <p class="text-[20px] md:text-[24px]">+998970020771</p>
+                </div>
+
+                <div class="flex gap-[20px] mb-[20px]">
+                    <img src="./assets/square.svg" />
+                    <p class="text-[20px] md:text-[24px]">+998971970771 (Пн.-Пт. 09:00-17:00)</p>
+                </div>
+
+                <img src="./assets/school2.svg" class="w-[280px] md:w-auto" />
+            </div>
+
+            <div>
+                <h3 class="text-[32px] md:text-[40px] mb-[10px]">Оставьте заявку</h3>
+                <p class="mb-[20px] text-[16px] md:text-[18px]">В честь открытия школы дарим скидку -20%</p>
+
+                <div class="flex flex-col items-end">
+                    <input class="w-full md:w-[400px] h-[52px] rounded bg-white text-black indent-4 mb-[20px] outline-none" placeholder="Имя" />
+                    <input class="w-full md:w-[400px] h-[52px] rounded bg-white text-black indent-4 mb-[20px] outline-none" placeholder="Фамилия" />
+                    <textarea class="w-full md:w-[400px] h-[120px] rounded bg-white text-black indent-4 p-3 resize-none outline-none" placeholder="Номер"></textarea>
+
+                    <button class="w-[160px] md:w-[197px] h-[52px] bg-white text-black text-[18px] md:text-[21px] rounded mt-[10px]">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#5855E7] mt-[80px] md:mt-[97px] py-[30px]">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-[30px] md:gap-0">
+            <img src="./assets/logo.svg" class="w-[150px] md:w-auto" />
+
+            <div class="text-white text-center md:text-left text-[18px] md:text-[20px] flex flex-col md:flex-row items-center gap-[10px] md:gap-[37px]">
+                <p>Контакты:</p>
+                <div>
+                    <p>+998971970771</p>
+                    <p>+998971970771</p>
+                </div>
+            </div>
+
+            <div class="text-white text-center md:text-left text-[18px] md:text-[20px]">
+                <p class="mb-[10px] md:mb-[20px]">Будьте с нами:</p>
+                <div class="flex items-center justify-center md:justify-start gap-[21px]">
+                    <img src="./assets/telegram (11) 1.svg" class="w-[30px]" />
+                    <img src="./assets/instagram (9) 1.svg" class="w-[30px]" />
+                    <img src="./assets/facebook (4) 1.svg" class="w-[30px]" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
