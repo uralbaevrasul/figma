@@ -9,24 +9,35 @@
 <body class="overflow-x-hidden">
 
     <header class="bg-[#5855E7] w-full">
+     
         <nav class="container mx-auto px-6 h-[143px] hidden md:flex items-center justify-between">
             <img src="./assets/logo.svg" alt="logo" />
-
             <ul class="lg:flex gap-[42px] text-white hidden md:flex">
                 <li><a href="#">О нашей школе</a></li>
                 <li><a href="#">Преимущества</a></li>
                 <li><a href="#">Классы</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-
             <button class="lg:w-[268px] h-[50px] bg-white text-black rounded hidden md:block">
                 Связаться с нами
             </button>
         </nav>
-
-        <div class="md:hidden flex items-center justify-between px-4 py-4">
+    
+      
+        <div class="md:hidden flex items-center justify-between px-4 py-2">
             <img src="./assets/logo.svg" class="w-[120px]" />
-            <img src="./assets/menu.svg" class="w-[40px]" />
+            <img id="menu-btn" src="./assets/menu.svg" class="w-[40px] cursor-pointer" />
+        </div>
+    
+      
+        <div id="mobile-menu" class="hidden bg-[#5855E7] text-white px-4 py-4">
+            <ul class="flex flex-col gap-4">
+                <li><a href="#">О нашей школе</a></li>
+                <li><a href="#">Преимущества</a></li>
+                <li><a href="#">Классы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><button class="bg-white text-black w-full py-2 rounded">Связаться с нами</button></li>
+            </ul>
         </div>
     </header>
 
@@ -238,6 +249,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
 </body>
 </html>
