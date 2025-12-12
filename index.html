@@ -7,16 +7,15 @@
     <title>Document</title>
 </head>
 <body class="overflow-x-hidden">
-
     <header class="bg-[#5855E7] w-full">
      
         <nav class="container mx-auto px-6 h-[143px] hidden md:flex items-center justify-between">
             <img src="./assets/logo.svg" alt="logo" />
             <ul class="lg:flex gap-[42px] text-white hidden md:flex">
-                <li><a href="#">О нашей школе</a></li>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">Классы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#about">О нашей школе</a></li>
+                <li><a href="#facilities">Преимущества</a></li>
+                <li><a href="#classes">Классы</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
             <button class="lg:w-[268px] h-[50px] bg-white text-black rounded hidden md:block">
                 Связаться с нами
@@ -32,16 +31,16 @@
       
         <div id="mobile-menu" class="hidden bg-[#5855E7] text-white px-4 py-4">
             <ul class="flex flex-col gap-4">
-                <li><a href="#">О нашей школе</a></li>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">Классы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#about">О нашей школе</a></li>
+                <li><a href="#facilities">Преимущества</a></li>
+                <li><a href="#classes">Классы</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </div>
     </header>
      
     <main class="bg-[url('./assets/bgimgmobile.svg')] md:bg-none"  >
-        <section class="hero container mx-auto flex flex-col md:flex-row items-center justify-center mt-[100px] px-4 md:px-6 overflow-hidden">
+        <section id="hero" class="hero container mx-auto flex flex-col md:flex-row items-center justify-center mt-[100px] px-4 md:px-6 overflow-hidden">
             <div class="hero_text w-full md:w-1/2 text-center md:text-left order-2 md:order-1 font-700">
                 <p class="text-[28px] md:text-[40px]">
                     <span class="text-[#6347EB] font-bold">The Best Future Stars</span> - мы заботимся о будущем вашего ребенка
@@ -68,7 +67,7 @@
         
     
     
-        <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[46px] px-4 mt-[90px] md:mt-[20]">
+        <section id="about" class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[46px] px-4 mt-[90px] md:mt-[20]">
             <p class="text-[32px] md:text-[40px] font-bold mt-[10px] md:mt-[20px] text-center md:text-left order-1 md:order-none md:hidden">
                 О нас
             </p>
@@ -96,7 +95,7 @@
     
     
         
-        <section class="w-full text-center bg-[#5855E7] mt-[100px] mb-[80px] py-[60px] px-4">
+        <section id="facilities" class="w-full text-center bg-[#5855E7] mt-[100px] mb-[80px] py-[60px] px-4">
             <h2 class="text-white font-semibold text-[32px] md:text-[40px] mb-[40px]">Наши преимущества</h2>
     
             <div class="flex flex-wrap justify-center gap-[40px] md:gap-[80px] max-w-[1080px] mx-auto">
@@ -135,7 +134,7 @@
         </section>
     
     
-        <section class="container mx-auto relative mb-[121px] px-4">
+        <section id="classes" class="container mx-auto relative mb-[121px] px-4">
             <div class="relative mx-auto text-center w-fit">
                 <h2 class="text-[60px] md:text-[96px] opacity-10 leading-none">Классы</h2>
                 <p class="text-[28px] md:text-[40px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Классы</p>
@@ -186,7 +185,7 @@
         </section>
     
     
-        <section class="container mx-auto px-4 w-fit">
+        <section id="contact" class="container mx-auto px-4 w-fit">
             <div class="relative mx-auto text-center mt-[80px] md:mt-[121px] w-fit">
                 <h2 class="text-[60px] md:text-[96px] opacity-10">Связаться</h2>
                 <p class="text-[28px] md:text-[40px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">
